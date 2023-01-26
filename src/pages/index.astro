@@ -43,6 +43,15 @@ const socialCount = SOCIALS.filter(social => social.active).length;
           </div>
         )
       }
+
+      <div class="get-in-contact-btn-wrapper">
+        <LinkButton href={`${SITE.base}/contact`}>
+          Get in contact
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+          </svg>
+        </LinkButton>
+      </div>
     </section>
 
     <Hr />
@@ -107,6 +116,15 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply font-semibold text-2xl tracking-wide;
   }
   .all-events-btn-wrapper {
-    @apply text-center my-8;
+    @apply text-center;
+  }
+
+  .get-in-contact-btn-wrapper {
+    @apply font-semibold;
+  }
+
+  .get-in-contact-btn-wrapper,
+  .all-events-btn-wrapper {
+    @apply my-8;
   }
 </style>
