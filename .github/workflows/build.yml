@@ -1,6 +1,9 @@
 name: Build
 
-on: [push] #Trigger the workflow every time you push to the `main` branch
+on: 
+  push: 
+    branches-ignore:
+      - main #Trigger the workflow every time you push to any branch except main
   
 # Allow this job to clone the repo and create a page deployment
 permissions:
