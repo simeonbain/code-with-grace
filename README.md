@@ -1,6 +1,8 @@
-# Code@Grace
+# Code With Grace
 
 ### Live at: [simeonbain.github.io/code-with-grace/](https://simeonbain.github.io/code-with-grace/)
+
+Official site of Code With Grace - Free code mentoring for coders of any level, at Grace Christian Community
 
 ## Project Structure 🗃
 
