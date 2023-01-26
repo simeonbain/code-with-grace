@@ -9,7 +9,7 @@ export const SITE = {
   title: "Code With Grace",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
-  postPerPage: 3,
+  postPerPage: 6,
 };
 
 export const LOGO_IMAGE = {
