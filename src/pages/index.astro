@@ -54,12 +54,12 @@ const socialCount = SOCIALS.filter(social => social.active).length;
             <h2>Next Event</h2>
             <ul>
               {featuredPosts.map(({ frontmatter }) => (
-                <Card href={`${SITE.base}/posts/${slugify(frontmatter)}`} post={frontmatter} secHeading={false} />
+                <Card href={`${SITE.base}/events/${slugify(frontmatter)}`} post={frontmatter} secHeading={false} />
               ))}
             </ul>
 
             <div class="all-events-btn-wrapper">
-              <LinkButton href={`${SITE.base}/posts`}>
+              <LinkButton href={`${SITE.base}/events`}>
                 All Events
                 <svg xmlns="http://www.w3.org/2000/svg">
                   <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z" />

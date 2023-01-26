@@ -22,13 +22,13 @@ const prev = pageNum > 1 ? "" : "disabled";
 const next = pageNum < totalPages ? "" : "disabled";
 ---
 
-<Layout title={`Posts | ${SITE.title}`}>
-  <Header activeNav="posts" />
-  <Main pageTitle="Posts" pageDesc="All the articles I've posted.">
+<Layout title={`Events | ${SITE.title}`}>
+  <Header activeNav="events" />
+  <Main pageTitle="Events" pageDesc="All events past and future.">
     <ul>
       {
         posts.map(({ frontmatter }) => {
-          return <Card href={`${SITE.base}/posts/${slugify(frontmatter)}`} post={frontmatter} />;
+          return <Card href={`${SITE.base}/events/${slugify(frontmatter)}`} post={frontmatter} />;
         })
       }
     </ul>
@@ -39,7 +39,7 @@ const next = pageNum < totalPages ? "" : "disabled";
       <nav class="pagination-wrapper" aria-label="Pagination">
         <LinkButton
           disabled={prev === "disabled"}
-          href={`${SITE.base}/posts${pageNum - 1 !== 1 ? "/" + (pageNum - 1) : ""}`}
+          href={`${SITE.base}/events${pageNum - 1 !== 1 ? "/" + (pageNum - 1) : ""}`}
           className={`mr-4 select-none ${prev}`}
           ariaLabel="Previous"
         >
@@ -50,7 +50,7 @@ const next = pageNum < totalPages ? "" : "disabled";
         </LinkButton>
         <LinkButton
           disabled={next === "disabled"}
-          href={`${SITE.base}/posts/${pageNum + 1}`}
+          href={`${SITE.base}/events/${pageNum + 1}`}
           className={`ml-4 select-none ${next}`}
           ariaLabel="Next"
         >
