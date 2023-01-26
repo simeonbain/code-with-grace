@@ -1,5 +1,5 @@
 ---
-import { SITE } from "src/config";
+import { SITE } from "@config";
 import Layout from "@layouts/Layout.astro";
 import Main from "@layouts/Main.astro";
 import Header from "@components/Header.astro";
@@ -44,7 +44,11 @@ const tagPosts = getPostsByTag(posts, tag);
   <Header activeNav="tags" />
   <Main pageTitle={`Tag:${tag}`} pageDesc={`All the articles with the tag "${tag}".`}>
     <ul>
-      {tagPosts.map(({ frontmatter }) => <Card href={`/posts/${slugify(frontmatter)}`} post={frontmatter} />)}
+      {
+        tagPosts.map(({ frontmatter }) => (
+          <Card href={`${SITE.base}/posts/${slugify(frontmatter)}`} post={frontmatter} />
+        ))
+      }
     </ul>
   </Main>
   <Footer />

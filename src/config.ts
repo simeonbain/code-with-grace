@@ -2,9 +2,11 @@ import type { SocialObjects } from "./types";
 
 export const SITE = {
   website: "https://simeonbain.github.io/code-with-grace/",
+  base: "/code-with-grace",
   author: "Simeon Bain",
   desc: "Free code mentoring for coders at any level, at Grace Christian Community",
   title: "CODE with GRACE",
+  ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 3,
 };

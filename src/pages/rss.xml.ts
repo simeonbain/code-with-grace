@@ -1,4 +1,4 @@
-import { SITE } from "src/config";
+import { SITE } from "@config";
 import rss from "@astrojs/rss";
 import type { Frontmatter } from "src/types";
 import type { MarkdownInstance } from "astro";
