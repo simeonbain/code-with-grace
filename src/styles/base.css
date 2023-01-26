@@ -5,20 +5,20 @@
 @layer base {
   :root,
   html[data-theme="light"] {
-    --color-fill: 251, 254, 251;
-    --color-text-base: 40, 39, 40;
-    --color-accent: 0, 108, 172;
-    --color-card: 230, 230, 230;
-    --color-card-muted: 205, 205, 205;
+    --color-fill: 238, 242, 227;
+    --color-text-base: 4, 63, 46;
+    --color-accent: 170, 30, 46;
+    --color-card: 238, 380, 210;
+    --color-card-muted: 170, 30, 46;
     --color-border: 236, 233, 233;
   }
   html[data-theme="dark"] {
-    --color-fill: 47, 55, 65;
-    --color-text-base: 230, 230, 230;
-    --color-accent: 26, 217, 217;
-    --color-card: 63, 75, 90;
-    --color-card-muted: 89, 107, 129;
-    --color-border: 59, 70, 85;
+    --color-fill: 4, 63, 46;
+    --color-text-base: 238, 242, 227;
+    --color-accent: 200, 241, 105;
+    --color-card: 42, 111, 43;
+    --color-card-muted: 200, 241, 105;
+    --color-border: 238, 242, 227;
   }
   #sun-svg,
   html[data-theme="dark"] #moon-svg {
