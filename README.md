@@ -21,7 +21,7 @@ Official site of Code With Grace - Free code mentoring for coders of any level, 
 │   │   └── socialIcons.ts
 │   ├── components/
 │   ├── contents/
-│   │   └── some-blog-posts.md
+│   │   └── some-post.md
 │   ├── layouts/
 │   └── pages/
 │   └── styles/
@@ -35,7 +35,7 @@ Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page
 
 Any static assets, like images, are placed in the `public/` directory.
 
-Content such as blog posts are stored in the `src/contents/` directory.
+Content such as posts are stored in the `src/contents/` directory.
 
 ## Tech 💻
 
