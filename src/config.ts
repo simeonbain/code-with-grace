@@ -6,7 +6,7 @@ export const SITE = {
   author: "Simeon Bain",
   desc: "Free code mentoring for coders of any level, at Grace Christian Community",
   displayTitle: "CODE with GRACE",
-  title: "Code With Grace",
+  title: "Code with Grace",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 6,
@@ -21,33 +21,39 @@ export const LOGO_IMAGE = {
 
 export const SOCIALS: SocialObjects = [
   {
-    name: "Meetup",
+    name: "Discord",
     href: "",
-    linkTitle: `${SITE.title} on Meetup`,
-    active: true,
+    linkTitle: `${SITE.title} on Discord`,
+    active: false,
   },
   {
     name: "Facebook",
-    href: "",
+    href: "https://www.facebook.com/GraceChristianCommunity/events",
     linkTitle: `${SITE.title} on Facebook`,
-    active: true,
-  },
-  {
-    name: "LinkedIn",
-    href: "",
-    linkTitle: `${SITE.title} on LinkedIn`,
-    active: true,
-  },
-  {
-    name: "Github",
-    href: "https://github.com/simeonbain/code-with-grace",
-    linkTitle: ` ${SITE.title} on GitHub`,
     active: true,
   },
   {
     name: "Instagram",
     href: "",
     linkTitle: `${SITE.title} on Instagram`,
+    active: false,
+  },
+  {
+    name: "Meetup",
+    href: "",
+    linkTitle: `${SITE.title} on Meetup`,
+    active: false,
+  },
+  {
+    name: "LinkedIn",
+    href: "",
+    linkTitle: `${SITE.title} on LinkedIn`,
+    active: false,
+  },
+  {
+    name: "Github",
+    href: "https://github.com/simeonbain/code-with-grace",
+    linkTitle: ` ${SITE.title} on GitHub`,
     active: false,
   },
   {
@@ -102,12 +108,6 @@ export const SOCIALS: SocialObjects = [
     name: "CodePen",
     href: "",
     linkTitle: `${SITE.title} on CodePen`,
-    active: false,
-  },
-  {
-    name: "Discord",
-    href: "",
-    linkTitle: `${SITE.title} on Discord`,
     active: false,
   },
   {

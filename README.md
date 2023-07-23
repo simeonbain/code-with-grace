@@ -1,8 +1,8 @@
-# Code With Grace
+# Code with Grace
 
 ### Live at: [simeonbain.github.io/code-with-grace/](https://simeonbain.github.io/code-with-grace/)
 
-Official site of Code With Grace - Free code mentoring for coders of any level, at Grace Christian Community
+Official site of Code with Grace - A free Box Hill coding meetup run by Grace Christian Community church
 
 ## Project Structure 🗃
 
@@ -10,10 +10,7 @@ Official site of Code With Grace - Free code mentoring for coders of any level, 
 /
 ├── public/
 │   ├── assets/
-│   │   └── logo.svg
-│   │   └── logo.png
-│   └── favicon.svg
-│   └── astropaper-og.jpg
+│   └── favicon.png
 │   └── robots.txt
 │   └── toggle-theme.js
 ├── src/
@@ -21,7 +18,7 @@ Official site of Code With Grace - Free code mentoring for coders of any level, 
 │   │   └── socialIcons.ts
 │   ├── components/
 │   ├── contents/
-│   │   └── some-post.md
+│   │   └── some-event.md
 │   ├── layouts/
 │   └── pages/
 │   └── styles/
@@ -35,7 +32,7 @@ Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page
 
 Any static assets, like images, are placed in the `public/` directory.
 
-Content such as posts are stored in the `src/contents/` directory.
+Content such as events are stored in the `src/contents/` directory.
 
 ## Tech 💻
 
@@ -43,7 +40,6 @@ Content such as posts are stored in the `src/contents/` directory.
 **Type Checking** - [TypeScript](https://www.typescriptlang.org/)  
 **Component Framework** - [ReactJS](https://reactjs.org/)  
 **Styling** - [TailwindCSS](https://tailwindcss.com/)  
-**Fuzzy Search** - [FuseJS](https://fusejs.io/)  
 **Icons** - [Boxicons](https://boxicons.com/) | [Tablers](https://tabler-icons.io/)  
 **Code Formatting** - [Prettier](https://prettier.io/)  
 **Markdown Linting** - [Markdown Lint](https://github.com/DavidAnson/vscode-markdownlint)  

@@ -2,10 +2,10 @@
 import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
-import Tag from "@components/Tag.astro";
 import Datetime from "@components/Datetime";
 import type { MarkdownInstance } from "astro";
 import type { Frontmatter } from "src/types";
+import LinkButton from "@components/LinkButton.astro";
 
 export interface Props {
   post: MarkdownInstance<Frontmatter>;
@@ -13,7 +13,7 @@ export interface Props {
 
 const { frontmatter, Content } = Astro.props.post;
 
-const { title, author, description, ogImage, datetime, tags } = frontmatter;
+const { title, author, description, ogImage, datetime, registerLink } = frontmatter;
 
 const ogUrl = new URL(ogImage ? ogImage : `${title}.svg`, Astro.url.origin).href;
 ---
@@ -33,10 +33,14 @@ const ogUrl = new URL(ogImage ? ogImage : `${title}.svg`, Astro.url.origin).href
     <article id="article" role="article" class="mx-auto max-w-3xl mt-8 prose">
       <Content />
     </article>
-
-    <ul class="tags-container">
-      {tags.map(tag => <Tag name={tag} />)}
-    </ul>
+    <div class="register-btn-wrapper">
+      <LinkButton href={registerLink}>
+        Please let us know here if you're coming
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+        </svg>
+      </LinkButton>
+    </div>
   </main>
   <Footer />
 </Layout>
@@ -48,7 +52,7 @@ const ogUrl = new URL(ogImage ? ogImage : `${title}.svg`, Astro.url.origin).href
   .post-title {
     @apply font-semibold text-2xl text-skin-accent;
   }
-  .tags-container {
-    @apply my-8;
+  .register-btn-wrapper {
+    @apply font-bold mt-12;
   }
 </style>

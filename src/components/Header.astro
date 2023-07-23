@@ -1,10 +1,6 @@
 ---
 import { LOGO_IMAGE, SITE } from "@config";
 import Hr from "./Hr.astro";
-import LinkButton from "./LinkButton.astro";
-
-import logoPNG from "/assets/logo.png";
-import logoSVG from "/assets/logo.svg";
 
 export interface Props {
   activeNav?: "home" | "events" | "tags" | "about" | "contact";
@@ -18,18 +14,7 @@ const { activeNav } = Astro.props;
   <div class="nav-container">
     <div class="top-nav-wrap">
       <a href={`${SITE.base}/`} class="logo">
-        {
-          LOGO_IMAGE.enable ? (
-            <img
-              src={LOGO_IMAGE.svg ? logoSVG : logoPNG}
-              alt="AstroPaper Logo"
-              width={LOGO_IMAGE.width}
-              height={LOGO_IMAGE.height}
-            />
-          ) : (
-            SITE.displayTitle
-          )
-        }
+        {SITE.displayTitle}
       </a>
       <nav id="nav-menu">
         <button
@@ -49,15 +34,10 @@ const { activeNav } = Astro.props;
             <a href={`${SITE.base}/`} class={activeNav === "home" ? "active" : ""}> Home</a>
           </li>
           <li>
-            <a href={`${SITE.base}/about`} class={activeNav === "about" ? "active" : ""}> About</a>
-          </li>
-          <li>
             <a href={`${SITE.base}/events`} class={activeNav === "events" ? "active" : ""}> Events</a>
           </li>
-          <li>
-            <a href={`${SITE.base}/tags`} class={activeNav === "tags" ? "active" : ""}> Tags</a>
-          </li>
-          <li>
+
+          <!-- <li>
             <LinkButton
               href={`${SITE.base}/contact`}
               className={`contact-link-btn focus-outline p-3 sm:p-1 ${activeNav === "contact" ? "active" : ""}`}
@@ -70,7 +50,7 @@ const { activeNav } = Astro.props;
                 ></path></svg
               >
             </LinkButton>
-          </li>
+          </li> -->
           <li>
             {
               SITE.lightAndDarkMode && (
@@ -122,7 +102,7 @@ const { activeNav } = Astro.props;
     @apply w-full sm:py-0 sm:ml-2 flex flex-col items-center sm:justify-end sm:flex-row sm:space-x-4 bg-skin-fill;
   }
   nav ul {
-    @apply mt-4 w-44 grid grid-rows-4 grid-cols-2 gap-y-2 gap-x-2 sm:gap-y-0 sm:mt-0 sm:ml-0 sm:w-auto sm:gap-x-5;
+    @apply mt-4 w-44 grid grid-rows-3 grid-cols-2 gap-y-2 gap-x-2 sm:gap-y-0 sm:mt-0 sm:ml-0 sm:w-auto sm:gap-x-5;
   }
   nav ul li {
     @apply col-span-2 flex justify-center items-center;
@@ -130,13 +110,13 @@ const { activeNav } = Astro.props;
   nav ul li a {
     @apply px-4 py-3 w-full text-center sm:px-2 sm:py-1 sm:my-0 font-medium hover:text-skin-accent;
   }
-  nav ul li:nth-child(4) a {
+  /* nav ul li:nth-child(3) a {
     @apply w-auto;
   }
-  nav ul li:nth-child(4),
-  nav ul li:nth-child(5) {
+  nav ul li:nth-child(3),
+  nav ul li:nth-child(4) {
     @apply col-span-1;
-  }
+  } */
   nav a.active {
     @apply underline underline-offset-4 decoration-wavy decoration-2;
   }
