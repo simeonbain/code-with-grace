@@ -23,35 +23,53 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header activeNav={"home"} />
   <main id="main-content">
     <section id="hero">
-      <h1>Free code mentoring for coders of all levels</h1>
+      <h1>Free Box Hill coding meetup for coders of all levels</h1>
+
+      <p>Code with Grace is a free coding meetup run by Grace Christian Community church in Box Hill South.</p>
 
       <p>
-        Code With Grace is a free coding meetup that takes place at Grace Christian Community church in Box Hill South.
+        We're passionate programmers from many backgrounds: some studying computer science, some working in tech, and
+        others who just enjoy coding as a hobby. Many of us are also passionate Christians, but you don't have to be one
+        to join us.
+      </p>
+
+      <p>Come along to meet others, refine your skills, or learn to code for the first time. All levels are welcome!</p>
+
+      <p>
+        <b>Where:</b><br />We meet at Wattle Park Chapel, <br /><i>234 Elgar Rd, Box Hill South VIC 3128</i>
       </p>
 
       <p>
-        Come along to meet with others, form friendships, refine your skills, or learn to code for the first time. All
-        levels are welcome!
+        <b>When:</b><br />We run regular events, check out <i>upcoming events</i> below for the next one.
       </p>
 
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
           <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
+            <div class="social-links">
+              <b>Social links:</b>
+            </div>
             <Socials />
           </div>
         )
       }
-
-      <div class="get-in-contact-btn-wrapper">
-        <LinkButton href={`${SITE.base}/contact`}>
-          Get in contact
+      <div class="more-info-btn-wrapper">
+        <LinkButton href={"https://gracechristiancommunity.org.au/"}>
+          Find out more about Grace Christian Community
           <svg xmlns="http://www.w3.org/2000/svg">
             <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
           </svg>
         </LinkButton>
       </div>
+      <!-- <div class="get-in-contact-btn-wrapper">
+        <LinkButton href={`${SITE.base}/contact`}>
+          More info about Grace Christian Community
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+          </svg>
+        </LinkButton>
+      </div> -->
     </section>
 
     <Hr />
@@ -60,7 +78,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       featuredPosts.length > 0 && (
         <>
           <section id="featured">
-            <h2>Next Event</h2>
+            <h2>Upcoming Events</h2>
             <ul>
               {featuredPosts.map(({ frontmatter }) => (
                 <Card href={`${SITE.base}/events/${slugify(frontmatter)}`} post={frontmatter} secHeading={false} />
@@ -99,7 +117,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply my-6;
   }
   .social-wrapper {
-    @apply flex flex-col sm:flex-row sm:items-center mt-4;
+    @apply flex flex-col sm:flex-row sm:items-center mt-10 mb-4;
   }
   .social-links {
     @apply whitespace-nowrap mr-2 sm:mb-0 mb-1;
@@ -119,12 +137,14 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply text-center;
   }
 
-  .get-in-contact-btn-wrapper {
-    @apply font-semibold;
+  .get-in-contact-btn-wrapper,
+  .more-info-btn-wrapper {
+    @apply font-bold;
   }
 
   .get-in-contact-btn-wrapper,
+  .more-info-btn-wrapper,
   .all-events-btn-wrapper {
-    @apply my-8;
+    @apply mt-2 mb-6;
   }
 </style>
