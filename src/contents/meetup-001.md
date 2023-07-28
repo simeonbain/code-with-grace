@@ -22,7 +22,7 @@ We run this meetup regularly at Grace Christian Community church's building, Wat
 
 We focus mainly on web development: HTML, CSS, Javascript, React and Node.js (among others). Don't worry if you're not familiar with any of that, we're here to guide you and make it an exciting journey.
 
-But if you want to work on something else tech related, we'd love to have you too - we just can't guarantee that we'll have the knowledge to help out (though we'll do our best).
+Though if you want to work on something else tech related, we'd love to have you too - we just can't guarantee that we'll have the knowledge to help out.
 
 ### Who's it for?
 

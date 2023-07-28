@@ -42,7 +42,11 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       <p>
         <b>When:</b><br />We run regular events, check out <i>upcoming events</i> below for the next one.
       </p>
+    </section>
 
+    <Hr />
+
+    <section>
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
@@ -117,7 +121,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply my-6;
   }
   .social-wrapper {
-    @apply flex flex-col sm:flex-row sm:items-center mt-10 mb-4;
+    @apply flex flex-col sm:flex-row sm:items-center mt-5 mb-4;
   }
   .social-links {
     @apply whitespace-nowrap mr-2 sm:mb-0 mb-1;
