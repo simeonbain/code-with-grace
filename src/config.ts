@@ -1,8 +1,8 @@
 import type { SocialObjects } from "./types";
 
 export const SITE = {
-  website: "https://simeonbain.github.io/code-with-grace",
-  base: "/",
+  website: "https://codewithgrace.org.au/",
+  base: "https://codewithgrace.org.au",
   author: "Simeon Bain",
   desc: "Free code mentoring for coders of any level, at Grace Christian Community",
   displayTitle: "CODE with GRACE",
