@@ -1,6 +1,6 @@
 # Code with Grace
 
-### Live at: [codewithgrace.org.au](https://codewithgrace.org.au/)
+### Live at: [simeonbain.github.io/code-with-grace/](https://simeonbain.github.io/code-with-grace/)
 
 Official site of Code with Grace - A free Box Hill coding meetup run by Grace Christian Community church
 
