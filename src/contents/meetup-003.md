@@ -1,9 +1,9 @@
 ---
 author: Code with Grace
-datetime: 2023-09-23T14:30:00Z
-title: 1 | Meetup and Mentoring - Web Development
-slug: meetup-001
-featured: true
+datetime: 2023-11-04T14:30:00Z
+title: 3 | Meetup and Mentoring - Web Development
+slug: meetup-003
+featured: false
 draft: false
 ogImage: ""
 description: Bring a coffee and something to work on. Or if you're a beginner we'll get you set up with the fundamentals.
