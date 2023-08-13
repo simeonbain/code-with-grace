@@ -7,8 +7,8 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://codewithgrace.org.au",
-  base: "/",
+  site: "https://simeonbain.github.io",
+  base: "/code-with-grace",
   integrations: [
     tailwind({
       config: {
