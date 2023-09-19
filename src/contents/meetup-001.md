@@ -1,6 +1,6 @@
 ---
 author: Code with Grace
-datetime: 2023-09-23T14:30:00Z
+datetime: 2023-09-30T15:00:00
 title: 1 | Meetup and Mentoring - Web Development
 slug: meetup-001
 featured: true
@@ -10,7 +10,7 @@ description: Bring a coffee and something to work on. Or if you're a beginner we
 registerLink: ""
 ---
 
-#### FREE | 2 hours | Wattle Park Chapel, 234 Elgar Rd, Box Hill South VIC 3128
+#### FREE | 1.5 hours | Wattle Park Chapel, 234 Elgar Rd, Box Hill South VIC 3128
 
 Bring a coffee and something to work on. Or if you're a beginner we'll get you set up with the fundamentals.
 
